@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('SAMAR-aws-secret-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('SAMAR-aws-secret-access-key')
+        AWS_ACCESS_KEY_ID     = credentials('samar-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('samar-aws-secret-access-key')
         ARTIFACT_NAME = 'Samar-Belt2D2-artifacts-123456.jar'
         AWS_S3_BUCKET = 'samar-b2d2'
         AWS_EB_APP_NAME = 'Samarapp'
